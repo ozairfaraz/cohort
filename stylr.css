@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  gap: 18px;
+}
+
+.section:nth-child(1) {
+  background-image: url(./ber.jpeg);
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+}
+
+.section:nth-child(2) {
+  background-image: url(./Greatest\ Estate\ Developer.jpeg);
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+}
+
+.section:nth-child(3) {
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+  background-image: url(./end.jpeg);
+}
+
+.section:nth-child(4) {
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+  background-image: url(./solo.jpeg);
+}
+
+.section:nth-child(5) {
+  height: 100%;
+  flex-grow: 1;
+  background-size: cover;
+  background-image: url(./zaraki.jpeg);
+}
+
+.section:hover {
+  flex-grow: 2;
+  transition: flex-grow 0.5s linear;
+  background-size: cover;
+  height: 100vh;
+}/*# sourceMappingURL=stylr.css.map */
