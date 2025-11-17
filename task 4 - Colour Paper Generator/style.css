@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  overflow: hidden;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main #btn {
+  padding: 15px 10px;
+  font-size: larger;
+  font-weight: 800;
+  background-color: crimson;
+  border-radius: 12px;
+  position: relative;
+  z-index: 9;
+}
+#main #btn:active {
+  scale: 0.85;
+}/*# sourceMappingURL=style.css.map */
