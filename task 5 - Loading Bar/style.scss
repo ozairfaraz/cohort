@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+/* Full page center */
+.page {
+  height: 100vh;
+  width: 100vw;
+  background: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+/* Main card */
+.download-box {
+  background: #1a1a1a;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 350px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+/* Progress bar background */
+.progress-wrap {
+  width: 100%;
+  height: 14px;
+  background: #333;
+  border-radius: 7px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+/* Progress bar (you will animate with JS) */
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  border-radius: 7px;
+  transition: width 0.25s ease;
+}
+
+/* Percent text */
+.percent {
+  font-size: 18px;
+  margin: 10px 0 15px;
+  opacity: 0.9;
+}
+
+/* Button */
+.start-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #5b86e5;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.start-btn:hover {
+  background: #3c63c4;
+}
+
+.start-btn:active {
+  transform: scale(0.97);
+}
