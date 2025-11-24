@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="main">
-        <div id="infos">
-            <div id="info">
-                <h3>High Score:
-                    <span id="high-score">0</span>
-                </h3>
-            </div>
-            <div id="info">
-                <h3>Score:
-                    <span id="score">0</span>
-                </h3>
-            </div>
-            <div id="info">
-                <h3>Time:
-                    <span id="time">00:00</span>
-                </h3>
-            </div>
-        </div>
-        <div id="board">
-            
-        </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="start-page">
+      <div class="start-game">
+        <h3>Welcome to my snake game</h3>
+        <button id="start-btn">Start Game</button>
+      </div>
     </div>
+    <div id="over-page">
+      <div class="over-game">
+        <h3>Game Over!</h3>
+        <button id="restart-btn">Restart Game</button>
+      </div>
+    </div>
+    <div id="main">
+      <div id="infos">
+        <div id="info">
+          <h3>
+            High Score:
+            <span id="high-score">0</span>
+          </h3>
+        </div>
+        <div id="info">
+          <h3>
+            Score:
+            <span id="score">0</span>
+          </h3>
+        </div>
+        <div id="info">
+          <h3>
+            Time:
+            <span id="time">00:00</span>
+          </h3>
+        </div>
+      </div>
+      <div id="board"></div>
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
