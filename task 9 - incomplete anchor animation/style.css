@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #000000;
+  font-family: monospace;
+}
+
+.box {
+  width: 400px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid rgb(71, 71, 71);
+  cursor: pointer;
+  padding: 20px;
+  anchor-name: --box;
+}
+
+.anchor {
+  position: absolute;
+  top: anchor(--box top);
+  left: anchor(--box left);
+  right: anchor(--box right);
+  bottom: anchor(--box bottom);
+  width: anchor-size(--box width);
+  height: anchor-size(--box height);
+  border: 2px solid rgb(71, 71, 71);
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.box:hover ~ .anchor {
+  background-color: rgba(255, 0, 0, 0.2);
+}/*# sourceMappingURL=style.css.map */
